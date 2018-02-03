@@ -9,7 +9,7 @@
     "watch": "webpack -w"
   },
   "repository": "https://github.com/hyperfuse/micro-graphql.git",
-  "author": "Kennet Postigo",
+  "author": "Aria Malkani",
   "license": "MIT",
   "dependencies": {
     "express-graphql": "^0.6.1",
