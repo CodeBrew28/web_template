@@ -1,4 +1,5 @@
 import { GraphQLObjectType, GraphQLString } from 'graphql';
+const mongoose = require('mongoose');
 
 const User = new GraphQLObjectType({
   name: 'User',
@@ -6,19 +7,11 @@ const User = new GraphQLObjectType({
   fields() {
     return {
       email: {
-        type: GraphQLString,
-        resolve(email) {
-          return email;
-        },
+        type: GraphQLString
       },
       password: {
-        type: GraphQLString,
-        resolve(password) {
-          return password;
-        },
+        type: GraphQLString
       },
-
-
     };
   },
 });

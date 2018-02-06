@@ -2,7 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-  devtool: 'inline-source-map',
+  target: 'node',
   entry: [
     './src/index',
   ],
@@ -16,11 +16,11 @@ module.exports = {
   ],
   module: {
     rules: [
-      {
-        test: /\.js?$/,
-        use: [ 'babel-loader' ],
-        include: path.join(__dirname, 'src'),
-      },
+      // {
+      //   test: /\.js?$/,
+      //   use: [ 'babel-loader' ],
+      //   include: path.join(__dirname, 'src'),
+      // },
     ],
   },
 };

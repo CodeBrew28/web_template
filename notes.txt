@@ -1,0 +1,38 @@
+`
+type User = Student | Teacher
+
+viewer {
+    __typename
+    ... on Student {
+        ...StudentHomePageView_query
+    }
+
+    ... on Teacher {
+        ...TeacherHomePageView_query
+    } 
+}
+
+// students(id: $id) {
+    name
+    teachers
+}
+
+<div>
+    this.props.viewer.__typename === "Student" ? <StudentHomePage /> : <TeacherHomePage />
+</div>
+
+
+students, teachers, lessons
+
+teachers - many to many - students
+teachers - one to many - lessons
+
+
+
+
+`
+
+
+// x = student.teachers().map(t => t.lessons).join().reduce((p, c) => c.completed ? {total: p+1, done: p+1} : {total: p+1, done: p}, {total: 0, done: 0})
+// percent = x.done/x.total
+

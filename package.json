@@ -4,7 +4,7 @@
   "description": "micro-graphql",
   "main": "dist/bundle.js",
   "scripts": {
-    "start": "yarn run build && micro dist/bundle.js",
+    "start": "micro dist/bundle.js",
     "build": "webpack",
     "watch": "webpack -w"
   },
@@ -15,7 +15,8 @@
     "express-graphql": "^0.6.1",
     "graphql": "^0.8.2",
     "micro": "^6.2.0",
-    "micro-compress": "^1.0.0"
+    "micro-compress": "^1.0.0",
+    "mongoose": "^5.0.3"
   },
   "devDependencies": {
     "babel-core": "^6.21.0",
