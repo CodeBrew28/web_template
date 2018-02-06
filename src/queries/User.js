@@ -8,5 +8,5 @@ const usertype = {
     return 'Welcome!'
   }
 }
-;('hello')
+
 export default usertype
